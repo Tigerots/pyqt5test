@@ -21,11 +21,27 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="automation_test_setting.py" />
+    <Compile Include="automation_test_window.py" />
+    <Compile Include="auto_save_setting.py" />
+    <Compile Include="auto_save_window.py" />
     <Compile Include="main_setting.py" />
+    <Compile Include="moudle_pysierial.py" />
     <Compile Include="pyqt_main.py" />
     <Compile Include="pyqt_mainwindow.py" />
+    <Compile Include="pyqt_mainwindow_setting.py" />
+    <Compile Include="pyqt_mainwindow_window.py" />
     <Compile Include="pyqt_sierial_window.py" />
+    <Compile Include="serial_conf_setting.py" />
+    <Compile Include="serial_conf_window.py" />
     <Compile Include="serial_setting.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="automation_test_setting.ui" />
+    <Content Include="auto_save_setting.ui" />
+    <Content Include="conf.ini" />
+    <Content Include="pyqt_mainwindow_setting.ui" />
+    <Content Include="serial_conf_setting.ui" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
