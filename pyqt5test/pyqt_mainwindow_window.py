@@ -165,7 +165,7 @@ class main_window(QMainWindow,serial_setting,Ui_MainWindow):#主界面
      def mian_window_singal(self):#主窗口的信号
          
          self.other_main_setting()#调用窗口其他设定事件
-         self.email.released.connect(self.at2.sendemail)
+         
          self.hex_send_button.toggled.connect(self.input_area_change)#输入区变换事件
          self.port_refresh_3.released.connect(self.port_refresh_event)#刷新串口事件
          self.textEdit.textChanged.connect(self.input_hex_check)#hex输入检查事件

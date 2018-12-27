@@ -96,55 +96,10 @@ class automation2_test(QDialog,Ui_Dialog,Ui_MainWindow):#串口窗口
          self.at3_output.emit()
          if self.lost_number>self.limit_lost:#若现丢失值大于设定的丢失值
              print('测试失败')
-             self.sendemail()#发送邮件
+            
              self.lost_number=0
              
-    #邮件发送
-     def sendemail(self):
-            msg_from='laosiji230@163.com'                                 
-            passwd='qwer1234'                                  
-            msg_to="laosiji231@163.com"#'laosiji231@163.com'                                              
-            subject="python邮件测试"                                       
-            #附近邮件对象
-            msg = MIMEMultipart('related')
-            msg['Subject'] = Header(subject,'utf-8').encode()#邮件标题
-            name, addr = parseaddr('你在做的测试出问题了 <%s>' %msg_from)#编码email头
-            msg['From'] =formataddr((Header(name, 'utf-8').encode(), addr))#格式化地址
-            msg['To'] = msg_to
-            #正文
-            content=  """
-            <p>你在做的测试断开了，快检查</p>
-            #<p><a href="http://www.runoob.com">这是一个链接</a></p>
-            <p><img src="cid:image1"></p>  
-             """
-            text=('设置的丢失极限：'+str( self.limit_lost)+'条\n'
-            '设置的响应时间：'+str(self.response_time)+'毫秒\n')
-            
-            #cid为html插入图片方法
-            msg.attach (MIMEText(text, 'html', 'utf-8'))
-            
-           # # html插入图片
-            #msgImage = MIMEText(open('tcp.jpg', 'rb').read(), 'base64', 'utf-8')           
-            #msgImage.add_header('Content-ID', '<image1>')
-            #msg.attach(msgImage)
-          
-            ##发送附件方式
-            #att2 = MIMEText(open('tcp.jpg', 'rb').read(), 'base64', 'utf-8') 
-            #att2["Content-Type"] = 'application/octet-stream' 
-            #att2["Content-Disposition"] = 'attachment; filename="tcp.jpg"' 
-            #msg.attach(att2) 
-            try:
-                s = smtplib.SMTP("smtp.163.com",25)#绑定smtp发送服务器
-                s.login(msg_from, passwd)#登录账号
-                #s.set_debuglevel(1)#打印信息
-                s.sendmail(msg_from, msg_to, msg.as_string())#发送邮件
-                print ("发送成功")
-            except smtplib.SMTPException as e:
-                print ("发送失败")
-                traceback.print_exc() 
-            finally:
-                s.quit()
-
+ 
             
 
          
