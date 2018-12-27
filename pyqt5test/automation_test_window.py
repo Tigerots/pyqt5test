@@ -12,7 +12,7 @@ from email.mime.base import MIMEBase
 from email.mime.image import MIMEImage
 import smtplib
 import configparser
-from main_setting import *
+
 
 #from main_setting import *
 class automation2_test(QDialog,Ui_Dialog,Ui_MainWindow):#串口窗口

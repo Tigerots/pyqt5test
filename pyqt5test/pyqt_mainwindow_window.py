@@ -1,5 +1,5 @@
 
-from main_setting import *
+from pyqt_mainwindow_setting import *
 from moudle_pysierial import *
 import sys
 import time
