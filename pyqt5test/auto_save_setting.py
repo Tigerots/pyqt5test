@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'auto_save_setting.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.setWindowModality(QtCore.Qt.ApplicationModal)
+        Dialog.resize(218, 270)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(Dialog.sizePolicy().hasHeightForWidth())
+        Dialog.setSizePolicy(sizePolicy)
+        Dialog.setMinimumSize(QtCore.QSize(218, 270))
+        Dialog.setMaximumSize(QtCore.QSize(218, 270))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("../icon/logi_icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        Dialog.setWindowIcon(icon)
+        Dialog.setModal(True)
+        self.verticalLayout = QtWidgets.QVBoxLayout(Dialog)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.frame = QtWidgets.QFrame(Dialog)
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.gridLayout = QtWidgets.QGridLayout(self.frame)
+        self.gridLayout.setObjectName("gridLayout")
+        self.sure = QtWidgets.QPushButton(self.frame)
+        self.sure.setMaximumSize(QtCore.QSize(75, 23))
+        self.sure.setObjectName("sure")
+        self.gridLayout.addWidget(self.sure, 9, 0, 1, 1)
+        self.cancel = QtWidgets.QPushButton(self.frame)
+        self.cancel.setMaximumSize(QtCore.QSize(75, 23))
+        self.cancel.setObjectName("cancel")
+        self.gridLayout.addWidget(self.cancel, 9, 2, 1, 1)
+        self.save_path = QtWidgets.QLineEdit(self.frame)
+        self.save_path.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.save_path.setText("")
+        self.save_path.setReadOnly(True)
+        self.save_path.setObjectName("save_path")
+        self.gridLayout.addWidget(self.save_path, 7, 0, 1, 3)
+        self.save_path_button = QtWidgets.QPushButton(self.frame)
+        self.save_path_button.setDefault(False)
+        self.save_path_button.setObjectName("save_path_button")
+        self.gridLayout.addWidget(self.save_path_button, 6, 0, 1, 3)
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setMaximumSize(QtCore.QSize(444, 25))
+        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 5, 0, 1, 3)
+        self.save_numbers = QtWidgets.QLineEdit(self.frame)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.save_numbers.sizePolicy().hasHeightForWidth())
+        self.save_numbers.setSizePolicy(sizePolicy)
+        self.save_numbers.setMaximumSize(QtCore.QSize(1111111, 20))
+        self.save_numbers.setObjectName("save_numbers")
+        self.gridLayout.addWidget(self.save_numbers, 4, 0, 1, 3)
+        self.label = QtWidgets.QLabel(self.frame)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
+        self.label.setMaximumSize(QtCore.QSize(16777215, 20))
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 2, 0, 1, 3)
+        self.verticalLayout.addWidget(self.frame)
+
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        self.sure.setText(_translate("Dialog", "确定"))
+        self.cancel.setText(_translate("Dialog", "取消"))
+        self.save_path_button.setText(_translate("Dialog", "设置保存路径"))
+        self.label_2.setText(_translate("Dialog", "注：根据通信频率快慢设置该数值"))
+        self.label.setText(_translate("Dialog", "每隔多少字节保存一次窗口信息"))
+

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ProfilingTarget xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectTarget>
+    <TargetProject>1cfeaf25-e38a-4424-b99f-7d66b7645184</TargetProject>
+    <FriendlyName>pyqt5test</FriendlyName>
+  </ProjectTarget>
+  <Reports>
+    <Report>
+      <Filename>C:\Users\特雷西亚酱\AppData\Local\Temp\pyqt5test_20181009.vsp</Filename>
+    </Report>
+  </Reports>
+</ProfilingTarget>
