@@ -1,0 +1,1 @@
+本项目是用pyqt5+pyserial写的
