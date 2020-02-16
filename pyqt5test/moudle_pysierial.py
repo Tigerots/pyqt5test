@@ -349,7 +349,7 @@ class serial_setting():
 #发送线程,处理完后发送信号输出到qt界面
 class send_thread(QThread):
 
-   sd_data_output = pyqtSignal(str,bytes)#数据输出信号
+   sd_data_output = pyqtSignal(str, bytes)#数据输出信号
  
    def __init__(self):
         super(send_thread, self).__init__()
@@ -432,13 +432,13 @@ class first_receive_thread(QThread):
    def hex(self,hex_button):
        self.hex_button777=hex_button
    def first_work(self,ser1,port_switch,port_refresh_switch,combobox_switch,dtu_test):#传递一次串口数据
-          self.dtu_test=dtu_test
-          self.ser1=ser1
-          self.port_switch=port_switch#开启开关
-          self.port_refresh_switch=port_refresh_switch#刷新开关
-          self.combobox_switch=combobox_switch#随意变换串口开关
-   
-          #self.hex_button777=1
+        self.dtu_test=dtu_test
+        self.ser1=ser1
+        self.port_switch=port_switch#开启开关
+        self.port_refresh_switch=port_refresh_switch#刷新开关
+        self.combobox_switch=combobox_switch#随意变换串口开关
+
+        #self.hex_button777=1
    
   
    def run(self):

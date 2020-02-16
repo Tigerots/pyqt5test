@@ -10,13 +10,13 @@ import os
 
 class main_window(QMainWindow,serial_setting,Ui_MainWindow):#主界面
      def __init__(self,sthread,sw,aw,frist_rthread,at2):#主窗口的执行
-        super(main_window,self).__init__() 
+        super(main_window, self).__init__()
         self.setupUi(self) 
-        self.sw=sw
-        self.aw=aw
+        self.sw = sw
+        self.aw = aw
         
         self.timer = QTimer(self)
-        self.at2=at2#自动测试模式
+        self.at2 = at2#自动测试模式
         self.sthread=sthread#发送线程
         self.sthread.work(bytes(),self.ser)
       

@@ -14,7 +14,7 @@ class auto_save_window(QDialog,Ui_Dialog):#串口窗口
          self.auto_filename=''#保存路径
          self.save_auto_filename=""
          self.auto_time=0 #设置的时间
-         self.save_numbers.setValidator(QIntValidator(0,9999999999999))#限制超时时间输入框为整数型数据
+         self.save_numbers.setValidator(QIntValidator(0,9999999))#限制超时时间输入框为整数型数据
          self.atuosave_switch=False
      def  serial_window_singal (self):
          self.cancel.clicked.connect(self.no_save)#取消保存事件
@@ -59,12 +59,11 @@ class auto_save_window(QDialog,Ui_Dialog):#串口窗口
          if len(self.auto_filename[0])<=1:
              print(len(self.auto_filename[0]))
 
-             
              QMessageBox.warning(self, '警告',"保存目录未指定开启失败，请重新开启", QMessageBox.Cancel)
              self.save_path.clear()
              #self.auto_save.setChecked(False)
                   
-            #QMessageBox.warning(self, '自动','未指定保存目录', QMessageBox.Cancel)
+             #QMessageBox.warning(self, '自动','未指定保存目录', QMessageBox.Cancel)
          else:
              QMessageBox.information(self, '自动保存开启成功',"自动保存目录为"+str(self.auto_filename[0]), QMessageBox.Cancel)
              self.save_path.setText(self.auto_filename[0])
