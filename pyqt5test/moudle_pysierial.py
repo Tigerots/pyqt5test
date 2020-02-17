@@ -439,7 +439,6 @@ class first_receive_thread(QThread):
         self.combobox_switch=combobox_switch#随意变换串口开关
 
         #self.hex_button777=1
-   
   
    def run(self):
        while self.ser1.isOpen() and  self.dtu_test==0:

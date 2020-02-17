@@ -796,7 +796,7 @@ class main_window(QMainWindow,serial_setting,Ui_MainWindow):#主界面
      def send_ready_send(self):
          if self.ser.isOpen():
            self.text_input=str(self.textEdit.toPlainText())
-           self.sthread.work(self.text_input,self.ser)#把数据转进去多线程里面处理
+           self.sthread.work(self.text_input, self.ser)#把数据转进去多线程里面处理
            self.sthread.start()
         
 #串口发送数据出去
