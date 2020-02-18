@@ -2,11 +2,13 @@
 
 # Form implementation generated from reading ui file 'pyqt_mainwindow_setting.ui'
 #
-# Created by: PyQt5 UI code generator 5.11.2
+# Created by: PyQt5 UI code generator 5.13.0
 #
 # WARNING! All changes made in this file will be lost!
 
+
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -2854,4 +2856,3 @@ class Ui_MainWindow(object):
         self.utf_8.setText(_translate("MainWindow", "UTF-8"))
         self.actionss.setText(_translate("MainWindow", "自动化测试1"))
         self.at2test.setText(_translate("MainWindow", "自动化测试2"))
-

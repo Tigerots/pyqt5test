@@ -8,8 +8,8 @@ import chardet
 import os
 
 
-class main_window(QMainWindow,serial_setting,Ui_MainWindow):#主界面
-     def __init__(self,sthread,sw,aw,frist_rthread,at2):#主窗口的执行
+class main_window(QMainWindow, serial_setting, Ui_MainWindow):#主界面
+     def __init__(self, sthread, sw,aw,frist_rthread,at2):#主窗口的执行
         super(main_window, self).__init__()
         self.setupUi(self) 
         self.sw = sw
@@ -106,7 +106,6 @@ class main_window(QMainWindow,serial_setting,Ui_MainWindow):#主界面
 # 写入文件
         with open('conf.ini', 'w') as fw:
           conf.write(fw)
-        
      def ini_info_import(self):
         try:
                 conf1 = configparser.ConfigParser()
@@ -155,13 +154,7 @@ class main_window(QMainWindow,serial_setting,Ui_MainWindow):#主界面
         except:
             print('sss')
         
-        
-               
-        
 
-
-
-        
      def mian_window_singal(self):#主窗口的信号
          
          self.other_main_setting()#调用窗口其他设定事件
@@ -623,7 +616,7 @@ class main_window(QMainWindow,serial_setting,Ui_MainWindow):#主界面
 
               
 #串口接收处理
-     def receive_handle(self,first_receive_data,qt_show_receive_data):
+     def receive_handle(self, first_receive_data, qt_show_receive_data):
             #接收事件是串口打开后一直开启的，通过它检测串口是否中途拔出
                     #print('接收时间'+'['+str(datetime.datetime.now().strftime('%H:%M:%S.%f'))+']')
                     print(qt_show_receive_data)
@@ -792,6 +785,11 @@ class main_window(QMainWindow,serial_setting,Ui_MainWindow):#主界面
                     self.receive_number_2.setText(str(self.received_strip))
                     self.textEdit_4.append(qt_show_receive_data)
                     self.textEdit_4.moveCursor(QTextCursor.End)#控制输出光标,保持底部显示
+
+
+
+
+
 #输入区字符预处理（剔除hex发送非法字符和缺位情况），预处理完后交给PYQT多线程进行数据转换
      def send_ready_send(self):
          if self.ser.isOpen():

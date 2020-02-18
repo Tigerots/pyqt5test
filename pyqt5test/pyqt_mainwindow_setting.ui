@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>773</width>
-    <height>674</height>
+    <width>1150</width>
+    <height>809</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -48,7 +48,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../icon/logi_icon.png</normaloff>../icon/logi_icon.png</iconset>
+    <normaloff>C:/Users/Tigerots/.designer/icon/logi_icon.png</normaloff>C:/Users/Tigerots/.designer/icon/logi_icon.png</iconset>
   </property>
   <property name="toolTip">
    <string/>
@@ -128,8 +128,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>771</width>
-         <height>634</height>
+         <width>1148</width>
+         <height>766</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_25">
@@ -493,14 +493,14 @@
               <item>
                <widget class="QFrame" name="frame_3">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>700</width>
+                  <width>900</width>
                   <height>150</height>
                  </size>
                 </property>
@@ -1490,7 +1490,7 @@
                                  <string/>
                                 </property>
                                 <property name="pixmap">
-                                 <pixmap>../../../.designer/icon/红灯.bmp</pixmap>
+                                 <pixmap>C:/Users/.designer/icon/红灯.bmp</pixmap>
                                 </property>
                                </widget>
                               </item>
@@ -1503,7 +1503,7 @@
                                  <string/>
                                 </property>
                                 <property name="pixmap">
-                                 <pixmap>../icon/红灯.bmp</pixmap>
+                                 <pixmap>C:/Users/Tigerots/.designer/icon/红灯.bmp</pixmap>
                                 </property>
                                 <property name="scaledContents">
                                  <bool>true</bool>
@@ -2244,7 +2244,7 @@ border-style: outset;</string>
                  </property>
                  <property name="maximumSize">
                   <size>
-                   <width>150</width>
+                   <width>200</width>
                    <height>25</height>
                   </size>
                  </property>
@@ -2570,8 +2570,8 @@ border-style:groove;</string>
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>453</width>
-                       <height>265</height>
+                       <width>726</width>
+                       <height>359</height>
                       </rect>
                      </property>
                      <layout class="QVBoxLayout" name="verticalLayout_27">
@@ -2675,7 +2675,7 @@ border-style:groove;</string>
                          <enum>QTabWidget::Rounded</enum>
                         </property>
                         <property name="currentIndex">
-                         <number>0</number>
+                         <number>2</number>
                         </property>
                         <property name="elideMode">
                          <enum>Qt::ElideLeft</enum>
@@ -4909,8 +4909,8 @@ border-style:groove;</string>
                               <rect>
                                <x>0</x>
                                <y>0</y>
-                               <width>150</width>
-                               <height>532</height>
+                               <width>697</width>
+                               <height>612</height>
                               </rect>
                              </property>
                              <layout class="QVBoxLayout" name="verticalLayout_42">
@@ -6395,8 +6395,8 @@ border-style: outset;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>773</width>
-     <height>23</height>
+     <width>1150</width>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="option">
@@ -6408,8 +6408,8 @@ border-style: outset;</string>
       <rect>
        <x>471</x>
        <y>237</y>
-       <width>146</width>
-       <height>116</height>
+       <width>169</width>
+       <height>126</height>
       </rect>
      </property>
      <property name="title">
@@ -6485,7 +6485,7 @@ border-style: outset;</string>
   <action name="OPC_UA_client">
    <property name="icon">
     <iconset>
-     <normaloff>../../../.designer/opc图标.jpg</normaloff>../../../.designer/opc图标.jpg</iconset>
+     <normaloff>C:/Users/.designer/opc图标.jpg</normaloff>C:/Users/.designer/opc图标.jpg</iconset>
    </property>
    <property name="text">
     <string>OPC UA 客户端</string>
@@ -6497,7 +6497,7 @@ border-style: outset;</string>
   <action name="OPC_UA_server">
    <property name="icon">
     <iconset>
-     <normaloff>../../../.designer/opc图标.jpg</normaloff>../../../.designer/opc图标.jpg</iconset>
+     <normaloff>C:/Users/.designer/opc图标.jpg</normaloff>C:/Users/.designer/opc图标.jpg</iconset>
    </property>
    <property name="text">
     <string>OPC UA 服务端</string>
@@ -6509,7 +6509,7 @@ border-style: outset;</string>
   <action name="tcp_ip_client">
    <property name="icon">
     <iconset>
-     <normaloff>../../../../../Desktop/tcp.jpg</normaloff>../../../../../Desktop/tcp.jpg</iconset>
+     <normaloff>C:/Desktop/tcp.jpg</normaloff>C:/Desktop/tcp.jpg</iconset>
    </property>
    <property name="text">
     <string>tcp/ip 客户端</string>
@@ -6518,7 +6518,7 @@ border-style: outset;</string>
   <action name="tcp_ip_server">
    <property name="icon">
     <iconset>
-     <normaloff>../../../../../Desktop/tcp.jpg</normaloff>../../../../../Desktop/tcp.jpg</iconset>
+     <normaloff>C:/Desktop/tcp.jpg</normaloff>C:/Desktop/tcp.jpg</iconset>
    </property>
    <property name="text">
     <string>tcp/ip 服务端</string>
@@ -6527,7 +6527,7 @@ border-style: outset;</string>
   <action name="modbus_rtu_client">
    <property name="icon">
     <iconset>
-     <normaloff>../../../.designer/modbus.jpg</normaloff>../../../.designer/modbus.jpg</iconset>
+     <normaloff>C:/Users/.designer/modbus.jpg</normaloff>C:/Users/.designer/modbus.jpg</iconset>
    </property>
    <property name="text">
     <string>Modbus RTU 客户端</string>
@@ -6536,7 +6536,7 @@ border-style: outset;</string>
   <action name="modbus_rtu_server">
    <property name="icon">
     <iconset>
-     <normaloff>../../../.designer/modbus.jpg</normaloff>../../../.designer/modbus.jpg</iconset>
+     <normaloff>C:/Users/.designer/modbus.jpg</normaloff>C:/Users/.designer/modbus.jpg</iconset>
    </property>
    <property name="text">
     <string>Modbus 服务端</string>
