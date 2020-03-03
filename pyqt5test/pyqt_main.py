@@ -38,12 +38,5 @@ while True:
         mw.show()#显示主画面
         sys.exit(app.exec_()) #可以捕获异常做清理工作
 
-        
-        
-
-        
- 
-      
-
 
 
